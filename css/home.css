@@ -1,0 +1,371 @@
+:root {
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    --font-size-h1: 32px;
+    --font-size-h2: 24px;
+    --font-size-h3: 20px;
+    --font-size-placeholder: 14px;
+    --font-size-footer-mobile: 12px;
+    --font-size-button: 18px;
+
+    --primary-color: #0D0D0D;
+    --secondary-color: #FFFFFF;
+    --accent-color: #C75C5C;
+    --valid-input-color: #16A34A;
+    --section-backround: #F5F5F5;
+    --border-color: #E0E0E0;
+    --header-footer-color: #BDBDBD;
+    --placeholder-input: #999999;
+
+}
+
+/* Carousel */
+
+.headline-h2 {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-h2);
+    text-align: center;
+    padding: 30px 30px;
+    font-weight: 500;
+
+}
+.new-arrivals-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--section-backround);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    box-sizing: border-box;
+    
+}
+
+.slide-image {
+    max-width: 560px;
+    width: auto;
+    height: auto;
+    display: block;
+    padding-right: 20px;
+    
+}
+
+.carousel-image {
+    max-width: 560px;
+    padding: 80px 0 80px 0;
+    
+}
+
+.slide-text {
+    padding-left: 20px ;
+}
+
+.slide-h1,
+.slide-h2 {
+    font-family: var(--primary-font);
+}
+
+.slide-h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 30px;
+    
+}
+
+.slide-h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    
+}
+
+.black-watch {
+    padding-left: 90px;
+}
+
+.button-home,
+.button-home-mobile {
+    padding: 8px 28px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: var(--font-size-button);
+    border: none;
+    margin-right: 5px;
+}
+
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+    height: 53.45px;
+    width: 53.45px;
+    background-color:var(--border-color);
+    font-size: var(--font-size-h3);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/*Thumbnail products*/
+
+.products-thumbnail {
+    background-color: var(--section-backround);
+}
+
+.products {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 62px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.product-card {
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.product-card img {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+    transform-origin: top left;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.products a {
+    text-decoration: none;
+}
+
+.product-discount,
+.product-price,
+.product-title,
+.product-price-regular {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: var(--font-size-button);
+    color: var(--primary-color);
+    
+
+}
+
+.product-discount {
+    text-decoration: line-through;
+}
+
+.product-price {
+    color: var(--accent-color);
+}
+
+
+
+@media (max-width: 768px) {
+    
+ 
+    .carousel-slide {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      
+    }
+
+    .carousel-image {
+       width: 100vw;
+       max-width: none;
+       height: auto;
+       padding: 0;
+       object-fit: cover;
+       display: block;
+    }
+
+    .slide-text {
+        order: 2;
+        position: absolute;
+        padding: 0;
+        margin-top: 300px;
+        width: 100%;
+        
+    }
+
+    .slide-h1 {
+        font-size: var(--font-size-h2);
+
+    }
+
+    .slide-h2 {
+        font-size: var(--font-size-h3);
+        padding-left: 30px;
+    }
+
+    .black-watch {
+        color: var(--secondary-color);
+        padding-left: 30px;
+    }
+
+    .slide-buttons {
+        display: none;
+        
+    }
+
+   .slide-buttons-mobile {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .headline-h2 {
+        padding: 40px 0 0 0;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .products-thumbnail {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+       
+    .carousel-slide {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      
+    }
+
+    .slide-image {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-image {
+       height: auto;
+       padding: 0;
+       object-fit: cover;
+       display: block; 
+    }
+
+    .slide-text {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+     .slide-h1 {
+        font-size: var(--font-size-h2);
+        padding: 0;
+
+    }
+
+    .slide-h2 {
+       padding: 0;
+       font-size: var(--font-size-h3);
+    }
+
+    .slide-buttons {
+        display: none;
+        
+    }
+    
+    .carousel-navigation {
+        margin-top: 80px;
+   }
+
+    .slide-buttons-mobile {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+     .products {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+
+
+
+
+ }
+
+@media (min-width: 1025px) {
+     
+    .slide-buttons-mobile {
+        display: none;
+    }
+
+    .carousel-slide {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .slide-text {
+        padding-left: 0;
+    }
+
+    .slide-image {
+        padding-right: 0;
+    }
+}
