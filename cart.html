@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product-details, description, price, discounted price, ratings, reviews and tags.">
-    <title>NovaLane | Product Page</title>
+    <meta name="description" content="View you cart with products and total price, adjust quantities, clear cart, proceed to checkout">
+    <title>NovaLane | Cart Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/product.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
-    <script src="js/product.js" defer></script>
+    <script src="js/cart.js" defer></script>
 </head>
 <body>
-    <div id="cart-toast" class="cart-toast hidden">
-        <span>Item added to cart!</span>
-        <div class="cart-toast-buttons">
-            <a href="cart.html" class="toast-view-cart">View Cart</a>
-            <button class="toast-continue">Continue Shopping</button>
-        </div>
-    </div>
     <div id="global-loader" class="loader hidden"></div>
     <header>
         <a href="index.html" class="logo">NovaLane</a>
@@ -66,11 +59,20 @@
     <div class="breadcrumbs">
         <a href="index.html" class="breadcrumbs-link">Product Feed Page</a>
         <span class="breadcrumbs-symbol"> | </span>
-        <span class="breadcrumbs-page"> Product Detail</span>
+        <span class="breadcrumbs-page">Cart</span>
     </div>
     <main>
-        <section class="product-specific-page">
-            <div class="product-specific-container"></div>
+        <section class="cart-container">
+            <div class="cart-section-left">
+                <h1 class="cart-headline">Your Cart</h1>
+                <div class="cart-items"></div>
+            </div>
+            <div class="cart-sum">
+                <h2 class="cart-sum-h2">Total sum</h2>
+                <h3 class="cart-sum-h3">Shipping and delivery: $ 0</h3>
+                <h3 id="cartTotal">Total sum:</h2>
+                <button id="checkoutButton"></button>
+            </div>
         </section>
     </main>
     <footer class="footer-site">

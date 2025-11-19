@@ -1,3 +1,4 @@
+//Get products from API with ID//
 const API_URL = "https://v2.api.noroff.dev/online-shop"
 
 async function fetchProductById(id) {
@@ -13,9 +14,11 @@ async function fetchProductById(id) {
 }
 
 
-/*Carousel */
 
-document.addEventListener("DOMContentLoaded", () => { 
+
+/*Carousel */
+//Carousel that gets three products from API with ID, one for each slide, with a next and prev button and automatic looping. Image is clickable.//
+document.addEventListener("DOMContentLoaded", async () => {
     const productIds = [
         "f7bdd538-3914-409d-bd71-8ef962a9a9dd",
         "c0d245f1-58fa-4b15-aa0c-a704772a122b",
@@ -69,9 +72,11 @@ prevButton.addEventListener("click", () => {
 
 
 async function fillCarousel() {
+    showLoader()
     for (let i = 0; i < productIds.length; i++) {
         const product = await fetchProductById(productIds[i])
         const slide = slides[i]
+        slide.dataset.id = product.id
 
         if (!product || !slide) continue 
 
@@ -94,20 +99,62 @@ async function fillCarousel() {
            
             title.textContent = product.title
         }
+
+        hideLoader()
     }
 
     fillCarousel()
     startAutoSlide()
+    
+//When clicking shop now button on carousel on desktop you will be directed to product-specific page for product showing on the carousel//
+    const shopNowButtons = document.querySelectorAll(".shop-now-button")
+    shopNowButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const activeSlide = slides[currentIndex]
+            if (!activeSlide) return
+            const productId = activeSlide.dataset.id
+            window.location.href = `product.html?id=${productId}`
+        })
+    })
+//When clicking learn more button you will get directed to coming-soon page//
+    const learnMoreButtons = document.querySelectorAll(".button-home:not(.shop-now-button")
+    learnMoreButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            window.location.href = "coming-soon.html"
+        })
+    })
+
+//Buttons for mobile, when clicking shop now you will be directed to product-specific page for product in carousel//
+    const mobileButtons = document.querySelectorAll(".button-home-mobile")
+    const mobileLearnMore = mobileButtons[0]
+    const mobileShopNow = mobileButtons[1]
+
+//When clicking learn now button you will be directed to coming soon page//
+    mobileLearnMore.addEventListener("click", () => {
+        window.location.href = "coming-soon.html"
+    })
+
+//Buttons for mobile, when clicking shop now you will be directed to product-specific page for product in carousel//
+    mobileShopNow.addEventListener("click", () => {
+        const activeSlide = slides[currentIndex]
+        if (!activeSlide) return
+        const productId = activeSlide.dataset.id
+        window.location.href = `product.html?id=${productId}`
+    })
 
 })
 
 
-/* Thumbnail*/
 
+
+/* Thumbnail*/
+//This function shows 12 products from API using ID. Each product have image, title, price and discounted price and is clickable//
 async function thumbnailProducts() {
+    showLoader()
     const container = document.querySelector(".products")
     if (!container) { 
         console.error("Did not find .products-container HTML")
+        hideLoader()
         return
     }
 
@@ -156,6 +203,8 @@ async function thumbnailProducts() {
             card.appendChild(link)
             container.appendChild(card)
         }
+
+        hideLoader()
     }
 
 

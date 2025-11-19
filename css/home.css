@@ -7,6 +7,7 @@
     --font-size-h2: 24px;
     --font-size-h3: 20px;
     --font-size-placeholder: 14px;
+    --font-size-label: 16px;
     --font-size-footer-mobile: 12px;
     --font-size-button: 18px;
 
@@ -106,7 +107,7 @@
 
 .button-home,
 .button-home-mobile {
-    padding: 8px 28px;
+    padding: 10px 28px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: var(--primary-font);
@@ -149,7 +150,7 @@
     padding-top: 100px;
     padding-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 62px;
     max-width: 1400px;
     margin: 0 auto;
@@ -204,6 +205,7 @@
 
 
 
+
 @media (max-width: 768px) {
     
  
@@ -222,6 +224,11 @@
        padding: 0;
        object-fit: cover;
        display: block;
+    }
+
+    .carousel-navigation {
+        height: 40px;
+        width: 40px;
     }
 
     .slide-text {
@@ -275,7 +282,7 @@
     }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px)  {
 
        
     .carousel-slide {
@@ -326,6 +333,9 @@
     
     .carousel-navigation {
         margin-top: 80px;
+        height: 40px;
+        width: 40px;
+
    }
 
     .slide-buttons-mobile {
@@ -340,9 +350,6 @@
         gap: 10px;
         padding-top: 20px;
     }
-
-
-
 
 
  }
@@ -367,5 +374,26 @@
 
     .slide-image {
         padding-right: 0;
+    }
+
+    .black-watch {
+        padding-left: 30px;
+    }
+  
+    .black-watch-h2 {
+        padding-left: 70px ;
+    }
+
+     .products {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 513px) {
+    .products {
+        grid-template-columns: 1fr;
     }
 }

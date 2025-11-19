@@ -7,6 +7,7 @@
     --font-size-h2: 24px;
     --font-size-h3: 20px;
     --font-size-placeholder: 14px;
+    --font-size-label: 16px;
     --font-size-footer-mobile: 12px;
     --font-size-button: 18px;
 
@@ -41,9 +42,7 @@
    
 }
 
-.product-specific-image {
-    
-}
+
 .product-image {
     margin-top: 18px;
     object-fit: cover;
@@ -74,6 +73,14 @@
 .rating-number {
     font-weight: 300;
     font-size: var(--font-size-button);
+}
+
+.product-price-old {
+    text-decoration: line-through;
+}
+
+.product-price-new {
+    color: var(--accent-color);
 }
 
 .product-description {
@@ -116,7 +123,9 @@ ul {
     font-size: var(--font-size-button);
 }
 
-
+.share-section {
+    position: relative;
+}
 .share-url {
     width: 100%;
     max-width: 250px;
@@ -128,8 +137,11 @@ ul {
 }
 
 .copy-message {
+    position: absolute;
     font-weight: 400;
     padding-left: 10px;
+  
+
 
 }
 
@@ -152,7 +164,59 @@ ul {
     font-weight: 500;
     padding: 10px 70px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
 
+
+
+.cart-toast {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: var(--section-backround);
+    border: 1px solid var(--border-color);
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-h3);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 3000;
+
+}
+
+.cart-toast.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.cart-toast-buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.toast-view-cart,
+.toast-continue {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-placeholder);
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -177,7 +241,10 @@ ul {
         text-align: center;
         
     }
-
+    
+    .product-image {
+        width: 350px
+    }
     .product-description {
         width: 390px;
         justify-self: center;

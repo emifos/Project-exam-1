@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
-    <script src="js/main.js" defer></script>
-    <script src="js/login.js" defer></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
+    <div id="global-loader" class="loader hidden"></div>
     <header>
-        <a href="index.html" class="logo">NovaLane</a>
+        <a href="../index.html" class="logo">NovaLane</a>
         <button class="hamburger-menu" id="hamburgerButton">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -55,7 +56,20 @@
         <span class="breadcrumbs-page">Log In</span>
     </div>
     <main>
-
+        <section class="login-form">
+            <form id="loginForm">
+                <h1 class="login-h1">Log In</h1>
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Your email adress" required>
+                <p class="email-error"></p>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Your password" required>
+                <p class="password-error"></p>
+                <button type="submit">Log in</button>
+                <p class="login-link">New to NovaLane? <a href="/account/signup.html">Sign up</a></p>
+            </form>
+        </section>
+        <p class="error"></p>
     </main>
     <footer class="footer-site">
         <div class="footer-container">

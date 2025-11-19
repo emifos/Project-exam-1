@@ -1,0 +1,131 @@
+:root {
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    --font-size-h1: 32px;
+    --font-size-h2: 24px;
+    --font-size-h3: 20px;
+    --font-size-placeholder: 14px;
+    --font-size-label: 16px;
+    --font-size-footer-mobile: 12px;
+    --font-size-button: 18px;
+
+    --primary-color: #0D0D0D;
+    --secondary-color: #FFFFFF;
+    --accent-color: #C75C5C;
+    --valid-input-color: #16A34A;
+    --section-backround: #F5F5F5;
+    --border-color: #E0E0E0;
+    --header-footer-color: #BDBDBD;
+    --placeholder-input: #999999;
+
+}
+
+.signup-form {
+    max-width: 350px;
+    margin: 50px auto;
+    background-color: var(--section-backround);
+    padding: 20px 50px;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.signup-h1 {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.signup-form label {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-label);
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.signup-form input {
+    padding: 16px 8px;
+    border-radius: 0;
+    border: 1px solid var(--border-color);
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-placeholder);
+    
+}
+
+.signup-form input:focus {
+    border: 1px solid var(--valid-input-color);
+    outline: none;
+}
+
+.signup-form button {
+    margin-top: 27px;
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: var(--font-size-button);
+    cursor: pointer;
+    
+}
+
+.signup-link {
+    align-self: center;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-placeholder);
+    font-weight: 300;
+    color: var(--primary-color);
+
+}
+
+.signup-link a {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.email-error,
+.password-error,
+.name-error {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-placeholder);
+    color: var(--accent-color);
+    margin: 0;
+}
+
+.input-error {
+    border: 1px solid var(--accent-color) !important;
+}
+
+.input-success {
+    border: 1px solid var(--valid-input-color) !important;
+}
+
+
+
+@media (min-width: 1025px) {
+
+.signup-form {
+    max-width: 350px;
+    margin: 50px auto;
+    background-color: var(--section-backround);
+    padding: 50px 140px;
+}
+
+.signup-h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 600;
+    
+}
+
+
+}

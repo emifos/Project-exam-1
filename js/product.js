@@ -1,9 +1,11 @@
+//Get products from API with ID//
 const API_URL = "https://v2.api.noroff.dev/online-shop"
 
 const params = new URLSearchParams(window.location.search)
 const productId = params.get("id")
 
 async function getProduct() {
+    showLoader()
     if (!productId) {
         console.error("No product-ID in URL")
         document.querySelector(".product-specific-container").innerHTML = 
@@ -21,9 +23,12 @@ async function getProduct() {
         renderProduct(product)
     } catch (error) {
         console.error("Error fetching products:", error)
+        document.querySelector(".product-specific-container").innerHTML = "<p class='error'>Error loading product. Please try again later.</p>"
+    } finally {
+        hideLoader()
     }
 }
-
+//Productdata from API, building html with js showing image, title, prices, tags, rating, reviews. 
 function renderProduct(product) {
     const container = document.querySelector(".product-specific-container")
     container.innerHTML = ""
@@ -70,6 +75,7 @@ function renderProduct(product) {
         price.textContent = `$ ${product.price}`
         price.classList.add("product-price-old")
         discountedPrice.textContent = ` $ ${product.discountedPrice}`
+        discountedPrice.classList.add("product-price-new")
     } else {
         price.textContent = `$ ${product.price}`
     }
@@ -122,6 +128,17 @@ function renderProduct(product) {
     addToCartButton.className = "add-to-cart-button"
     addToCartButton.textContent = "Add to cart"
 
+//If the user is NOT logged in and tries to add item to cart, you will get redirected to login page//
+     addToCartButton.addEventListener("click", () => {
+        const token = localStorage.getItem("token")
+        if (!token) {
+            window.location.href = "account/login.html"
+            return
+        }
+         addToCart(product)
+    })
+
+
     imageDiv.appendChild(image)
     pricesDiv.appendChild(price)
     if (discountedPrice.textContent) pricesDiv.appendChild(discountedPrice)
@@ -144,7 +161,7 @@ function renderProduct(product) {
    
     getProduct()
 
-    
+//Number rating that converts in to star icons and also shows number, returns the star rating as a html string.//
 function createRatingStars(rating) {
     if (!rating) return "<p>No rating</>"
     
@@ -170,3 +187,49 @@ function createRatingStars(rating) {
     return `<div class="rating-stars">${starsHTML}<span class="rating-number">${rating.toFixed(1)} / 5</span></div>`
     
 }
+//Using localstorage the item gets added to cart or add quantity if the product is alredy in the cart, the cart-count gets updated and a toast displays//
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || []
+    const existing = cart.find(item => item.id === product.id)
+
+    if (existing) {
+        existing.quantity += 1
+    } else {
+        cart.push({
+            id: product.id,
+            title: product.title,
+            description: product.description,
+            price: product.price,
+            discountedPrice: product.discountedPrice,
+            image: product.image?.url,
+            quantity: 1
+        })
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart))
+    
+    updateCartCount()
+    showCartToast()
+}
+
+
+//Toast notification after adding item to cart, you can view cart or continue shopping, this toast displays for 4 seconds, then disappear//
+function showCartToast() {
+    const toast = document.getElementById("cart-toast")
+    toast.classList.remove("hidden")
+    toast.classList.add("show")
+    setTimeout(() => {
+        toast.classList.remove("show")
+    }, 4000)
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toast = document.getElementById("cart-toast")
+    const continueBtn = document.querySelector(".toast-continue")
+    if ( continueBtn) {
+        continueBtn.addEventListener("click", () => {
+            toast.classList.remove("show")
+        })
+    }
+})
+ 

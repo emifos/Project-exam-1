@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product-details, description, price, discounted price, ratings, reviews and tags.">
-    <title>NovaLane | Product Page</title>
+    <meta name="description" content="Checkout page, this page has a form with different payment methods and form for delivery adress">
+    <title>NovaLane | Checkout Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/product.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
-    <script src="js/product.js" defer></script>
+    <script src="js/checkout.js" defer></script>
 </head>
 <body>
-    <div id="cart-toast" class="cart-toast hidden">
-        <span>Item added to cart!</span>
-        <div class="cart-toast-buttons">
-            <a href="cart.html" class="toast-view-cart">View Cart</a>
-            <button class="toast-continue">Continue Shopping</button>
-        </div>
-    </div>
     <div id="global-loader" class="loader hidden"></div>
     <header>
         <a href="index.html" class="logo">NovaLane</a>
@@ -35,9 +28,9 @@
             </div>
             <nav class="header-icons">
                 <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
-                <a href="cart.html" class="cart-icon">
+                 <a href="cart.html" class="cart-icon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-count"></span>
+                    <span id="cart-count" class="cart-count"></span>
                 </a>
             </nav>
         </div>
@@ -55,10 +48,7 @@
                 </ul>
                 <div class="mobile-icons">
                     <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
-                    <a href="cart.html" class="cart-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="cart-count"></span>
-                    </a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </nav>
@@ -66,12 +56,10 @@
     <div class="breadcrumbs">
         <a href="index.html" class="breadcrumbs-link">Product Feed Page</a>
         <span class="breadcrumbs-symbol"> | </span>
-        <span class="breadcrumbs-page"> Product Detail</span>
+        <span class="breadcrumbs-page"> Checkout</span>
     </div>
     <main>
-        <section class="product-specific-page">
-            <div class="product-specific-container"></div>
-        </section>
+        
     </main>
     <footer class="footer-site">
         <div class="footer-container">

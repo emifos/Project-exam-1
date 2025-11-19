@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product-details, description, price, discounted price, ratings, reviews and tags.">
-    <title>NovaLane | Product Page</title>
+    <meta name="description" content="Sign up page, here you can create an account">
+    <title>NovaLane | Sign Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/309152690f.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/product.css" rel="stylesheet">
-    <script src="js/main.js" defer></script>
-    <script src="js/product.js" defer></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/signup.css" rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/signup.js" defer></script>
 </head>
 <body>
-    <div id="cart-toast" class="cart-toast hidden">
-        <span>Item added to cart!</span>
-        <div class="cart-toast-buttons">
-            <a href="cart.html" class="toast-view-cart">View Cart</a>
-            <button class="toast-continue">Continue Shopping</button>
-        </div>
-    </div>
     <div id="global-loader" class="loader hidden"></div>
     <header>
-        <a href="index.html" class="logo">NovaLane</a>
+        <a href="../index.html" class="logo">NovaLane</a>
         <button class="hamburger-menu" id="hamburgerButton">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -34,15 +27,11 @@
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
             <nav class="header-icons">
-                <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
-                <a href="cart.html" class="cart-icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-count"></span>
-                </a>
+                <a href="/account/login.html"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </nav>
         </div>
-    </header>
-      <nav class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu" id="mobileMenu">
             <div class="mobile-menu-content">
                 <div class="mobile-search">
                     <input type="text" id="mobileSearch" name="mobileSearch" placeholder="Search" class="mobile-search-input">
@@ -50,28 +39,40 @@
                 </div>
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home | Products</a></li>
-                    <li><a href="account/login.html">Log In</a></li>
-                    <li><a href="account/signup.html">Sign up</a></li>
+                    <li><a href="/account/login.html">Log In</a></li>
+                    <li><a href="/account/signup.html">Sign up</a></li>
                 </ul>
                 <div class="mobile-icons">
-                    <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
-                    <a href="cart.html" class="cart-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="cart-count"></span>
-                    </a>
+                    <a href="/account/login.html"><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </nav>
+    </header> 
     <div class="mini-banner">Upcoming Sale on all shoes 30/12/25</div>
-    <div class="breadcrumbs">
+     <div class="breadcrumbs">
         <a href="index.html" class="breadcrumbs-link">Product Feed Page</a>
         <span class="breadcrumbs-symbol"> | </span>
-        <span class="breadcrumbs-page"> Product Detail</span>
+        <span class="breadcrumbs-page">Sign Up</span>
     </div>
     <main>
-        <section class="product-specific-page">
-            <div class="product-specific-container"></div>
+        <section class="signup-form">
+            <form id="signupForm">
+                <h1 class="signup-h1">Sign Up</h1>
+                <label for="signupName">Name</label>
+                <input type="text" id="signupName" name="name" placeholder="Create username"required >
+                <p class="name-error"></p>
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" name="email" placeholder="Your email address" required >
+                <p class="email-error"></p>
+                <label for="signupPassword">Password</label>
+                <input  type="password" id="signupPassword" name="password" placeholder="Your Password" required >
+                <p class="password-error"></p>
+                <button type="submit">Sign up</button>
+                <p class="signup-link">Already have an account? <a href="/account/login.html">Log in</a></p>
+            </form>
         </section>
+        <p class="error"></p>
     </main>
     <footer class="footer-site">
         <div class="footer-container">
@@ -103,6 +104,6 @@
                 <p>2025 Your Shop - All rights reserved</p>
             </div>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>

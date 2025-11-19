@@ -15,6 +15,7 @@
     <script src="js/home.js" defer></script>
 </head>
 <body>
+    <div id="global-loader" class="loader hidden"></div>
    <header>
         <a href="index.html" class="logo">NovaLane</a>
         <button class="hamburger-menu" id="hamburgerButton">
@@ -26,8 +27,11 @@
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
             <nav class="header-icons">
-                <a href="login.html"><i class="fa-regular fa-user"></i></a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
+                 <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count" class="cart-count"></span>
+                </a>
             </nav>
         </div>
         <nav class="mobile-menu" id="mobileMenu">
@@ -38,12 +42,15 @@
                 </div>
                 <ul class="mobile-nav-links">
                     <li><a href="index.html">Home | Products</a></li>
-                    <li><a href="login.html">Log In</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="account/login.html">Log In</a></li>
+                    <li><a href="account/signup.html">Sign up</a></li>
                 </ul>
                 <div class="mobile-icons">
-                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
-                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="account/login.html"><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count"></span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -54,7 +61,7 @@
             <div class="carousel-container">
                 <div class="carousel-track">
                     <!--Slide 1-->
-                    <div class="carousel-slide">
+                    <div class="carousel-slide" data-id="f7bdd538-3914-409d-bd71-8ef962a9a9dd">
                         <div class="slide-text">
                             <h1 class="slide-h1">New arrivals</h1>
                             <h2 class="slide-h2">White Sneakers</h2>
@@ -68,7 +75,7 @@
                         </div>
                     </div>
                     <!--Slide 2-->
-                    <div class="carousel-slide">
+                    <div class="carousel-slide" data-id="c0d245f1-58fa-4b15-aa0c-a704772a122b">
                         <div class="slide-text">
                             <h1 class="slide-h1">New arrivals</h1>
                             <h2 class="slide-h2">Organic Shampoo</h2>
@@ -82,10 +89,10 @@
                         </div>
                     </div>
                     <!--Slide 3-->
-                    <div class="carousel-slide">
+                    <div class="carousel-slide" data-id="83111322-05a9-4a93-bc81-7d6b58f1a707">
                         <div class="slide-text">
                             <h1 class="slide-h1 black-watch">New arrivals</h1>
-                            <h2 class="slide-h2 black-watch">Black Watch</h2>
+                            <h2 class="slide-h2 black-watch black-watch-h2">Black Watch</h2>
                             <div class="slide-buttons">
                                 <button class="button-home">Learn More</button>
                                 <button class="button-home shop-now-button">Shop Now</button>
