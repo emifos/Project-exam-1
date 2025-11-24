@@ -13,7 +13,7 @@ This application allows users to browse products, view detailed product informat
 
 ---
 
-- [Client](#Fictional Client)
+- [Fictional Client](#Fictional-client)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Resources/References](#Resources/References)
