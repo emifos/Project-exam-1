@@ -78,6 +78,7 @@ function loadCart() {
 }
 //Increases or decreases quantity of the speciic product, finds product with id. If the quantity reach zero the product is removed from cart//
 function changeQuantity(id, amount) {
+    showLoader()
     let cart = JSON.parse(localStorage.getItem("cart")) || []
     const item = cart.find(item => item.id === id)
     if (!item) return
@@ -90,6 +91,7 @@ function changeQuantity(id, amount) {
     localStorage.setItem("cart", JSON.stringify(cart))
     loadCart()
     updateCartCount()
+    hideLoader()
 }
 
 function removeFromCart(id) {
@@ -115,7 +117,9 @@ function setupCheckoutButton() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    showLoader()
     loadCart()
+    hideLoader()
     updateCartCount()
     setupCheckoutButton()
 })

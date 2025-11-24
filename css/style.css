@@ -126,6 +126,11 @@ header {
     
 }
 
+.search-input:focus {
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
 .search-icon {
     position: absolute;
     right: 15px;
@@ -216,6 +221,11 @@ header {
     
 }
 
+.mobile-search-input {
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
 .mobile-search .search-icon {
     position: absolute;
     right: 15px;
@@ -299,7 +309,7 @@ header {
     background-color: var(--footer-color);
     color: var(--primary-color);
     font-family: var(--secondary-font);
-    padding: 40px 20px 20px;
+    padding: 40px 20px 20px 60px;
 }
 
 .footer-container {
@@ -316,6 +326,12 @@ header {
         font-family: var(--secondary-font);
         font-size: var(--font-size-footer-mobile);
         font-weight: 300;
+       
+}
+
+.footer-section-link {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .social-icons a {
@@ -325,6 +341,17 @@ header {
 }
 
 
+/*Coming soon page*/
+.coming-soon {
+    margin: 100px 50px;
+    text-align: center;
+    height: 50vh;
+}
+
+.coming-soon-text {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-h2);
+}
 
 @media (max-width: 1024px) {
 

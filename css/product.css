@@ -59,13 +59,19 @@
 .product-tags,
 .share-url,
 .copy-message,
-.product-reviews {
+.product-reviews,
+.product-rating {
     font-family: var(--secondary-font);
 }
 
+.no-info {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-label);
+    font-weight: 300;
+}
 .product-title {
     font-weight: 400;
-    font-size: var(--font-size-h3) ;
+    font-size: var(--font-size-h3);
 }
 
 .product-description,
@@ -141,8 +147,6 @@ ul {
     font-weight: 400;
     padding-left: 10px;
   
-
-
 }
 
 .copy-message.hidden {
@@ -226,7 +230,7 @@ ul {
     .product-specific-page {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 10px;
+        padding: 10px 0 30px;
         margin: 30px 0 60px 0;
         justify-content: center;
         align-items: center;
@@ -239,11 +243,12 @@ ul {
         justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 10px;
         
     }
     
     .product-image {
-        width: 350px
+        width: 210px
     }
     .product-description {
         width: 390px;

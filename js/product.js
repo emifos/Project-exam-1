@@ -90,7 +90,8 @@ function renderProduct(product) {
         })
     } else {
         const li = document.createElement("li")
-        li.textContent = "No tags avaiable"
+        li.textContent = "No tags avaiable."
+        li.classList.add("no-info")
         tagList.appendChild(li)
     }
 
@@ -102,7 +103,8 @@ function renderProduct(product) {
         })
     } else {
         const li = document.createElement("li")
-        li.textContent = "No reviews yet."
+        li.textContent = "Not reviewed yet."
+        li.classList.add("no-info")
         reviewList.appendChild(li)
     }
 
@@ -163,7 +165,7 @@ function renderProduct(product) {
 
 //Number rating that converts in to star icons and also shows number, returns the star rating as a html string.//
 function createRatingStars(rating) {
-    if (!rating) return "<p>No rating</>"
+    if (!rating) return "<p class='no-info'>Not rated yet.</>"
     
     const maxStars = 5
     const fullStars = Math.floor(rating)

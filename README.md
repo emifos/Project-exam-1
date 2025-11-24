@@ -55,3 +55,6 @@ HTTP POST request method https://mollify.noroff.dev/content/feu1/javascript-1/mo
 Blur, https://www.geeksforgeeks.org/html/html-dom-onblur-event/?utm_source
 
 On main.js, I have the function updateCartCount, I have used this video for inspiration https://www.youtube.com/watch?v=gXWohFYrI0M as well as ChatGpt for gudiance.
+
+Image:
+Klarna logo from https://www.pngegg.com/en/png-ventu/download.
