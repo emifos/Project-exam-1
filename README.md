@@ -18,7 +18,7 @@ This application allows users to browse products, view detailed product informat
 - [Usage](#Usage)
 - [Resources/References](#Resources/References)
 
-## **Fictional client**
+## **Fictional Client**
 
 - Name:
   Nova Lane
@@ -35,10 +35,28 @@ This application allows users to browse products, view detailed product informat
 
 ## **Installation**
 
-1. Clone or download the repository
-2. Open the project folder in code editor (VS Code)
-3. Open index.html using Live Server Extension
-4. The site will load and connect to Noroff API automatically.
+1. Clone the repository
+
+```bash
+  git clone https://github.com/emifos/Project-exam-1.git
+```
+
+2. Navigate to the project folder
+
+```
+ cd Project-exam-1
+```
+
+3. Open the project in code editor (VS Code)
+
+```
+ code .
+```
+
+4. Start the project using Live Server.
+
+- Open index.html using Live Server Extension
+- The site will load and connect to Noroff API automatically.
 
 ---
 
@@ -85,39 +103,48 @@ This application allows users to browse products, view product details, and simu
 
 ### Home-page:
 
-Function on how to get product from API with ID is inspired from code from https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+Function on how to get products from API with ID is inspired by
+[MDN - Using the fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-Part of the carousel is inspired from code from https://www.geeksforgeeks.org/html/building-a-carousel-with-vanilla-javascript/?utm_source
-and https://dev.to/min11benja/how-to-make-a-horizontal-moving-carousel-with-vanilla-js-ts-elc?utm_source and I have also got assistanse from ChatGPT.
+Part of the carousel is inspired from code from
+[GeeksForGeeks - Buidling a carousel](https://www.geeksforgeeks.org/html/building-a-carousel-with-vanilla-javascript/?utm_source)
+and
+[Dev.to - Horizontal Carousel Guide](https://dev.to/min11benja/how-to-make-a-horizontal-moving-carousel-with-vanilla-js-ts-elc?utm_source) and I have also got assistanse from ChatGPT.
 
-For the thumbnail - innerHTML I have used this for inspiration https://mollify.noroff.dev/content/feu1/javascript-1/module-4/create-html?nav=course.
+For the thumbnail innerHTML I have used this for inspiration from
+[Noroff - Create HTML](https://mollify.noroff.dev/content/feu1/javascript-1/module-4/create-html?nav=course.)
 I have also got assistanse from ChatGPT.
 
 ### Product-page:
 
-When making function renderProduct I got inspiration and modifed some of the code from https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement, https://www.w3schools.com/js/js_htmldom_nodes.asp, https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild, I also got assistanse from ChatGPT.
+When making function renderProduct I got inspiration and modifed some of the code from
+[MDN -createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement), [W3Schools - DOM Nodes](https://www.w3schools.com/js/js_htmldom_nodes.asp) and [MDN - appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild), I also got assistanse from ChatGPT.
 
-For function createRatingStars I used article for help/inspiration https://stackoverflow.com/questions/46130122/good-key-props-for-a-list-of-rating-stars.
+For function createRatingStars I used article for help/inspiration [Stackoverflow - Good Keys for rating Stars](https://stackoverflow.com/questions/46130122/good-key-props-for-a-list-of-rating-stars.)
 
-For function showCartToast i red this article https://developer.mozilla.org/en-US/docs/Web/API/Element/classList and used and modiefied my code, also using ChatGpt for guidance.
+For function showCartToast i red this article [MDN - Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and used and modiefied code, also using ChatGpt for guidance.
 
 ### Cart-page:
 
-For functions on cart-page i used https://www.digitalocean.com/community/tutorials/js-introduction-localstorage-sessionstorage, https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener, https://blog.logrocket.com/localstorage-javascript-complete-guide/, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find for inspiration, borrowed but modified code and also used ChatGpt for guidance.
+For functions on cart-page i used and got inspired by [DigitalOcean - localStorageGuide](https://www.digitalocean.com/community/tutorials/js-introduction-localstorage-sessionstorage), [MDN - EventTarget.addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener), [LogRocket -LocalStorage Complete Guide](https://blog.logrocket.com/localstorage-javascript-complete-guide/) and [MDN - Array.find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) , borrowed but modified code and also used ChatGpt for guidance.
 
 ### Login-page and Signup-page:
 
-To check if valid/not valid email I borrowed but modiefied code from https://www.geeksforgeeks.org/javascript/javascript-program-to-validate-an-email-address/.
+To check if valid/not valid email I borrowed but modiefied code from [GeeksForGeeks - Validate Email in Javascript](https://www.geeksforgeeks.org/javascript/javascript-program-to-validate-an-email-address/.)
 
-To check if valid/not valid password I borrowed but modiefied codefrom https://www.geeksforgeeks.org/javascript/javascript-program-to-validate-password-using-regular-expressions/.
+To check if valid/not valid password I borrowed but modiefied codefrom [GeeksForGeeks - validate Password with RegEx](https://www.geeksforgeeks.org/javascript/javascript-program-to-validate-password-using-regular-expressions/.)
 
-HTTP POST request method https://mollify.noroff.dev/content/feu1/javascript-1/module-5/api-methods/http-post-request-method?nav=course
+HTTP POST request request method [Noroff - HTTP POST Request Method](https://mollify.noroff.dev/content/feu1/javascript-1/module-5/api-methods/http-post-request-method?nav=course)
 
-Blur, https://www.geeksforgeeks.org/html/html-dom-onblur-event/?utm_source
+Blur event Reference inspired by [GeeksForGeeks - onBlur Event](https://www.geeksforgeeks.org/html/html-dom-onblur-event/?utm_source)
 
-On main.js, I have the function updateCartCount, I have used this video for inspiration https://www.youtube.com/watch?v=gXWohFYrI0M as well as ChatGpt for gudiance.
+On main.js, I have the function updateCartCount, I have used this video for inspiration [Youtube - Shopping Cart Tutorial](https://www.youtube.com/watch?v=gXWohFYrI0M) as well as ChatGpt for gudiance.
 
 ### Images
 
-Image:
-Klarna logo from https://www.pngegg.com/en/png-ventu/download.
+Klarna Logo:
+[PNGEgg - Klarna logo](https://www.pngegg.com/en/png-ventu/download.)
+
+### Favicon
+
+[Favicon.io - Generator](https://favicon.io/favicon-generator/)

@@ -57,7 +57,7 @@ form.addEventListener("submit", async (e) => {
 
         const data = await response.json()
         if (!response.ok) {
-            throw new Error(data.message || "Login failed")
+            throw new Error(data.message || "Login failed! Please enter a valid email and password. Don't have a account? Sign up.")
         }
 
         localStorage.setItem("token", data.accessToken)

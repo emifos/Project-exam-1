@@ -80,7 +80,7 @@ form.addEventListener("submit", async (e) => {
         const data = await response.json()
 
         if (!response.ok) {
-            throw new Error(data.message || "Signup failed")
+            throw new Error(data.message || "Signup failed! This email is already registered. Try loggin in instead.")
         }
 
         window.location.href = "/account/login.html"

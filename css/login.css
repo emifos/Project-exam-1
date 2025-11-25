@@ -93,6 +93,7 @@
     font-weight: 400;
 }
 
+
 .email-error,
 .password-error {
     font-family: var(--secondary-font);

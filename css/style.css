@@ -340,6 +340,19 @@ header {
         font-size: 20px;
 }
 
+/**Error message**/
+
+.error {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-label);
+    color: var(--accent-color);
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
+
 
 /*Coming soon page*/
 .coming-soon {

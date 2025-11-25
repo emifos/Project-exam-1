@@ -49,6 +49,10 @@ function renderProduct(product) {
     const shareMessage = document.createElement("span")
     const reviewList = document.createElement("ul")
 
+    const reviewHeader = document.createElement("h2")
+    reviewHeader.textContent = "Reviews"
+    reviewHeader.className = "reviews-header"
+
     imageDiv.className = "product-spesific-image"
     image.className = "product-image"
     detailsDiv.className = "product-specific-details"
@@ -154,6 +158,7 @@ function renderProduct(product) {
         tagList,
         shareSection,
         addToCartButton,
+        reviewHeader,
         reviewList
     )
 
