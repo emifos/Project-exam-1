@@ -1,10 +1,18 @@
+//Loader//
+showLoader()
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        hideLoader()
+    }, 300)
+})
+
 //Get form and inputs//
 const form = document.getElementById("loginForm")
 
 const emailInput = form.email
 const emailError = document.querySelector(".email-error")
 
-//Checks if the email is standard format, if invalid shows error message and gets a red border, if valid gread border.//
+// Validation - Checks if the email is standard format, if invalid shows error message and gets a red border, if valid gread border.//
 emailInput.addEventListener("blur", () => {
     const email = emailInput.value
 
@@ -23,7 +31,7 @@ emailInput.addEventListener("blur", () => {
 const passwordInput = form.password
 const passwordError = document.querySelector(".password-error")
 
-//Checks if the password is valid, if invalid shows error message and gets a red border, if valid gread border. Must be letters, at least one number and min-lenght 8//
+// Validation - Checks if the password is valid, if invalid shows error message and gets a red border, if valid gread border. Must be letters, at least one number and min-lenght 8//
 passwordInput.addEventListener("blur", () => {
     const password = passwordInput.value
     
@@ -69,4 +77,20 @@ form.addEventListener("submit", async (e) => {
             hideLoader()
             document.querySelector(".error").textContent = err.message
         }
+})
+
+//Log out - checks if the user is already logged in, if logged in it hides login form and shows logged in-message and logout-button//
+
+const token = localStorage.getItem("token")
+const loggedInMessage = document.getElementById("loggedInMessage")
+const logoutButton = document.getElementById("logoutButton")
+
+if (token) {
+    form.style.display = "none"
+    loggedInMessage.style.display ="block"
+}
+
+logoutButton.addEventListener("click", () => {
+    localStorage.removeItem("token")
+    window.location.reload()
 })

@@ -140,6 +140,8 @@ Blur event Reference inspired by [GeeksForGeeks - onBlur Event](https://www.geek
 
 On main.js, I have the function updateCartCount, I have used this video for inspiration [Youtube - Shopping Cart Tutorial](https://www.youtube.com/watch?v=gXWohFYrI0M) as well as ChatGpt for gudiance.
 
+Token storage and logout function inspired by [MDN - Using thw web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) as well as ChatGpt for guidance.
+
 ### Images
 
 Klarna Logo:
@@ -148,3 +150,7 @@ Klarna Logo:
 ### Favicon
 
 [Favicon.io - Generator](https://favicon.io/favicon-generator/)
+
+### Icons
+
+[Icons - Fontawesome](https://fontawesome.com/)

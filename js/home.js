@@ -1,5 +1,10 @@
+//Loader//
 showLoader()
-window.onload = () => hideLoader()
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        hideLoader()
+    }, 300)
+})
 //Get products from API with ID//
 const API_URL = "https://v2.api.noroff.dev/online-shop"
 

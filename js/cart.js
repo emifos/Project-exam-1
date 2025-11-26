@@ -1,3 +1,11 @@
+//Loader//
+showLoader()
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        hideLoader()
+    }, 300)
+})
+
 //Loads cart from localstorage, displays cart items and calculate the total price, you can also decrease, increase and remove items//
 function loadCart() {
     const cart = JSON.parse(localStorage.getItem("cart")) || []
@@ -7,7 +15,7 @@ function loadCart() {
     container.innerHTML = ""
 //If cart it empy, displays message//
     if (cart.length === 0) {
-        container.innerHTML = "<p>Your cart is empty.</p>"
+        container.innerHTML = '<p class="empty-cart">Your cart is empty.</p>'
         totalElement.textContent = "Total sum: $0.00"
         return
     }

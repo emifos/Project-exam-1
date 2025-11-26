@@ -1,3 +1,10 @@
+//Loader//
+showLoader()
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        hideLoader()
+    }, 300)
+})
 //Get products from API with ID//
 const API_URL = "https://v2.api.noroff.dev/online-shop"
 
@@ -15,7 +22,9 @@ async function getProduct() {
 
     try {
         const response = await fetch (`${API_URL}/${productId}`)
-        if (!response.ok) throw new Error('HTTP error ${response.status}')
+        if (!response.ok) {
+            (`HTTP error ${response.status}`)
+        } 
 
         const data = await response.json()
         const product = data.data

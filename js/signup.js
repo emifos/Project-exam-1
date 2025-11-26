@@ -1,3 +1,10 @@
+//loader//
+showLoader()
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        hideLoader()
+    }, 300)
+})
 
 const form = document.getElementById("signupForm")
 

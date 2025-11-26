@@ -110,6 +110,20 @@
     border: 1px solid var(--valid-input-color) !important;
 }
 
+/* Log out */
+.loggedin-message {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-h3);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logout-button {
+   display: block;
+   margin: 20px auto 0 auto; 
+   margin-bottom: 20px;
+}
+
 @media (min-width: 1025px) {
 
 .login-form {

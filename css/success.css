@@ -1,0 +1,87 @@
+:root {
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    --font-size-h1: 32px;
+    --font-size-h2: 24px;
+    --font-size-h3: 20px;
+    --font-size-placeholder: 14px;
+    --font-size-label: 16px;
+    --font-size-footer-mobile: 12px;
+    --font-size-: 18px;
+
+    --primary-color: #0D0D0D;
+    --secondary-color: #FFFFFF;
+    --accent-color: #C75C5C;
+    --valid-input-color: #16A34A;
+    --section-backround: #F5F5F5;
+    --border-color: #E0E0E0;
+    --header-color: #E0E0E0;
+    --footer-color: #BDBDBD;
+    --placeholder-input: #999999;
+
+
+}
+
+.success-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--section-backround);
+   
+}
+
+.success-title {
+    font-family: var(--primary-font);
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+}
+
+.success-message {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-);
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.success-logo {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: var(--font-size-h2);
+    margin-top: 18px;
+}
+
+
+.logout-success-button {
+    padding: 10px 55px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: var(--font-size-);
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.success-icon {
+    font-size: 80px;
+    margin-bottom: 18px;
+}
+
+.logout-message {
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-label);
+    color: var(--valid-input-color);
+}
+
+@media (min-width:1025px) {
+    
+    .success-container {
+    width: 600px;
+   
+}
+}

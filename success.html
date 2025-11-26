@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This page will display a success-message if successfull sumbmitting">
     <title>NovaLane | Success Page</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -59,8 +60,16 @@
         <span class="breadcrumbs-symbol"> | </span>
         <span class="breadcrumbs-page">Confirmation</span>
     </div>
-    <main>
-      
+    <main class="success-container">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h1 class="success-title">Thank you for your purchase!</h1>
+        <p class="success-message">Your order is placed successfully and will be shipped soon.</p>
+        <p class="success-message"> Welcome back!</p>
+        <p class="success-logo">NovaLane</p>
+        <button id="logoutSuccessButton" class="logout-success-button">Log out</button>
+        <p id="logoutMessage" class="logout-message" style="display:none; margin-top:20px;">
+            You are now logged out!
+        </p>
     </main>
     <footer class="footer-site">
         <div class="footer-container">

@@ -47,7 +47,7 @@
     margin-top: 18px;
     object-fit: cover;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border: 1px solid var(--border-color);
  
 }
@@ -63,6 +63,7 @@
 .product-rating {
     font-family: var(--secondary-font);
 }
+
 
 .no-info {
     font-family: var(--secondary-font);
@@ -278,6 +279,10 @@ ul {
         margin: 0 auto;
     }
 
+    .product-specific-prices {
+        padding-top: 10px;
+}
+
     .product-tags,
     .share-section,
     .add-to-cart-button {
@@ -301,9 +306,6 @@ ul {
         width: 200px;
     }
 
-    .copy-button {
-        
-    }
     .add-to-cart-button {
         width: 310px;
         margin: 0 auto;

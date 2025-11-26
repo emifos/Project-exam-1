@@ -1,3 +1,4 @@
+//Loader//
 showLoader()
 window.onload = () => {
     hideLoader()
@@ -30,7 +31,13 @@ checkoutForm.addEventListener("submit", (e) => {
     e.preventDefault()
 
     showLoader()
-    hideLoader()
+    setTimeout(() => {
+        hideLoader()
+    
+    localStorage.removeItem("cart")
+    window.location.href="success.html"
+
+    }, 600)
 })
 
 //Payment info validation//
