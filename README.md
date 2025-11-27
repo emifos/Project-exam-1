@@ -143,8 +143,11 @@ This project is licensed under the MIT License.
 
 ## **Contact**
 Emilie Sofie Fosmo
+
 emilie.fosmo@hotmail.com
+
 [LinkdIn](https://www.linkedin.com/in/emilie-sofie-fosmo-1b9bb1228/)
+
 [Project Link](https://github.com/emifos/Project-exam-1)
 
 --- 
