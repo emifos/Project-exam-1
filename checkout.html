@@ -70,17 +70,17 @@
             <section class="payment-form">
                 <h2 class="checkout-h2">Payment Method</h2>
                 <form id="paymentForm">
-                    <label>
-                        <div class="payment-option">
+                    <div class="payment-option">
+                        <label>
                             <div class="payment-left">
                                 <input type="radio" name="payment" value="klarna">
                                 <span>Klarna - Pay now or pay later</span>
                             </div>
-                            <img src="image/klarna-logo.png" alt="Klarna logo" class="payment-image">
+                        </label>
+                        <img src="image/klarna-logo.png" alt="Klarna logo" class="payment-image">
                         </div>
-                    </label>
-                    <label>
-                        <div class="payment-option">
+                    <div class="payment-option"></div>
+                        <label>
                             <div class="payment-lef">
                                 <input type="radio" name="payment" value="card">
                                 <span>Credit-/Debit card, Apple Pay</span>
@@ -90,8 +90,8 @@
                                 <i class="fa-brands fa-cc-apple-pay checkout-icon"></i>
                                 <i class="fa-brands fa-cc-mastercard checkout-icon"></i>
                             </div>
-                        </div>
-                    </label>
+                        </label>
+                    </div>
                     <div id="card-fields" class="card-fields hidden">
                         <input type="text" id="cardNumber" placeholder="Card number">
                         <p class="cardnumber-error"></p>
@@ -113,15 +113,15 @@
                         <label for="checkoutMobile">Mobile Number *</label>
                         <input type="number" id="checkoutMobile" name="number" placeholder="Mobile Number" required>
                         <p class="mobile-error"></p>
-                        <div class="adress-row">
+                        <div class="address-row">
                             <div class="form-field">
-                                <label for="checkoutAdress">Adress Line *</label>
-                                <input type="adress" id="checkoutAdress" name="adress" placeholder="Your Adress" required>
-                                <p class="adress-error"></p>
+                                <label for="checkoutAdress">Address Line *</label>
+                                <input type="text" id="checkoutAddress" name="address" placeholder="Your Address" required>
+                                <p class="address-error"></p>
                             </div>
                             <div class="form-field zip-field">
                                 <label for="checkoutZipcode">Zip Code *</label>
-                                <input type="number" id="checkoutZipcode" name="zipcode" placeholder="Example: 1341" class="checkout-zipcode"required>
+                                <input type="number" id="checkoutZipcode" name="zipcode" placeholder="Example: 1341" class="checkout-zipcode" required>
                                 <p class="zipcode-error"></p>
                             </div>
                         </div>

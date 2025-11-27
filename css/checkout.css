@@ -151,7 +151,7 @@
 
 .email-error,
 .mobile-error,
-.adress-error,
+.address-error,
 .zipcode-error,
 .cardnumber-error,
 .expiry-error,
@@ -181,17 +181,17 @@
 /*Desktop*/
 @media (min-width: 1025px) {
 
-    .adress-row {
+    .address-row {
         display: flex;
         gap: 20px;
         align-items: flex-start;
     }
 
-    .adress-row .form-field {
+    .address-row .form-field {
         flex: 1;
     }
 
-    .adress-row .zip-field {
+    .address-row .zip-field {
         flex: 0 0 130px;
     }
 

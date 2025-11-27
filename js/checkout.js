@@ -102,8 +102,8 @@ const emailError = document.querySelector(".email-error")
 const mobile = checkoutForm.number
 const mobileError = document.querySelector(".mobile-error")
 
-const adress = checkoutForm.adress
-const adressError = document.querySelector(".adress-error")
+const address = checkoutForm.address
+const addressError = document.querySelector(".address-error")
 
 const zipcode = checkoutForm.zipcode
 const zipcodeError = document.querySelector(".zipcode-error")
@@ -138,15 +138,15 @@ mobile.addEventListener("blur", () => {
 
 })
 
-adress.addEventListener("blur", () => {
-     if(adress.value.trim().length < 3) {
-        adressError.textContent = "Adress must be at least 3 characters."
-        adress.classList.add("input-error")
-        adress.classList.remove("input-success")
+address.addEventListener("blur", () => {
+     if(address.value.trim().length < 3) {
+        addressError.textContent = "Address must be at least 3 characters."
+        address.classList.add("input-error")
+        address.classList.remove("input-success")
     } else {
-        adressError.textContent = ""
-        adress.classList.remove("input-error")
-        adress.classList.add("input-success")
+        addressError.textContent = ""
+        address.classList.remove("input-error")
+        address.classList.add("input-success")
     }
 
 })
