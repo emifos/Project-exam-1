@@ -70,6 +70,7 @@ form.addEventListener("submit", async (e) => {
 
    
     const username = email.split("@")[0]
+
   //POST reuest to API, sends registration to API//
     try {
         const response = await fetch ("https://v2.api.noroff.dev/auth/register", {
@@ -90,7 +91,7 @@ form.addEventListener("submit", async (e) => {
             throw new Error(data.message || "Signup failed! This email is already registered. Try loggin in instead.")
         }
 
-        window.location.href = "/account/login.html"
+        window.location.href = "./login.html"
         } catch (err) {
             document.querySelector(".error").textContent = err.message
     
