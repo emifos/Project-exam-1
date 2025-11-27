@@ -9,14 +9,20 @@ NovaLane Online Shop.
 The project is a responsive front-end interface built for the Noroff Online Shop API.
 This application allows users to browse products, view detailed product information (title, description, price, rating, tags and reviews), register an account, log in and add items to their cart- then complete a checkout flow.
 
+---
+
 ## **Table of Contents**
 
 ---
-
 - [Fictional Client](#Fictional-client)
+- [Screenshots](#Screenshots)
+- [Built With](#Built With)
 - [Installation](#Installation)
 - [Usage](#Usage)
+- [Licence](#License)
 - [Resources/References](#Resources/References)
+
+---
 
 ## **Fictional Client**
 
@@ -32,6 +38,28 @@ This application allows users to browse products, view detailed product informat
   Nova Lane was created to make shopping for modern lifestyle products simple, stylish and inspiring.
   From headphones to watches and sneakers - every product is carefully selected for young adults who want modern, trendy and functional items.
   The store combines urban style with simplicity: products should be easy to discover, easy to purchase and stylish to own.
+
+---
+
+## **Screenshots**
+
+![home-carousel](https://github.com/user-attachments/assets/6f3f064f-ad62-4026-afac-c86119e48e91)
+![home-thumbnail](https://github.com/user-attachments/assets/ea02e003-33ce-4c2d-905b-f1365cc9f096)
+![product-detail](https://github.com/user-attachments/assets/6e311ecf-98e1-4008-a90c-0f61331b88b2)
+![cart-page](https://github.com/user-attachments/assets/e5427bf2-4aa5-4a6b-877c-d5c848f1e033)
+![login-page](https://github.com/user-attachments/assets/55758b3b-ef8a-454e-ba21-57d164a6edb3)
+![signup-page](https://github.com/user-attachments/assets/4351440a-c3ba-4cba-bc2f-c14fbbe42eca)
+![success-page](https://github.com/user-attachments/assets/03be3f14-dcc6-40a3-ad67-c002db1f6dca)
+![[mobile-menu](https://github.com/user-attachments/assets/f5a7eea8-4f7a-4a8e-8304-29fe0d87b4bd)
+
+---
+
+## **Built With**
+-HTML
+-CSS
+-Javascript
+
+---
 
 ## **Installation**
 
@@ -98,6 +126,19 @@ This application allows users to browse products, view product details, and simu
 - User can choose to log out.
 
 ---
+
+## **Licence**
+This project is licensed under the MIT License. 
+
+---
+
+## **Contact**
+Emilie Sofie Fosmo
+emilie.fosmo@hotmail.com
+[LinkdIn](https://www.linkedin.com/in/emilie-sofie-fosmo-1b9bb1228/)
+[Project Link](https://github.com/emifos/Project-exam-1)
+
+--- 
 
 ## **Resources/References**
 
