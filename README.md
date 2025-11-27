@@ -16,7 +16,7 @@ This application allows users to browse products, view detailed product informat
 ---
 - [Fictional Client](#Fictional-client)
 - [Screenshots](#Screenshots)
-- [Built With](#Built With)
+- [Built With](#BuiltWith)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Licence](#License)
@@ -42,21 +42,30 @@ This application allows users to browse products, view detailed product informat
 ---
 
 ## **Screenshots**
-
+### Home-carousel
 ![home-carousel](https://github.com/user-attachments/assets/6f3f064f-ad62-4026-afac-c86119e48e91)
+### Home Thumbnail
 ![home-thumbnail](https://github.com/user-attachments/assets/ea02e003-33ce-4c2d-905b-f1365cc9f096)
+### Product Details
 ![product-detail](https://github.com/user-attachments/assets/6e311ecf-98e1-4008-a90c-0f61331b88b2)
+### Cart Page
 ![cart-page](https://github.com/user-attachments/assets/e5427bf2-4aa5-4a6b-877c-d5c848f1e033)
+### Login Page
 ![login-page](https://github.com/user-attachments/assets/55758b3b-ef8a-454e-ba21-57d164a6edb3)
+### Signup Page
 ![signup-page](https://github.com/user-attachments/assets/4351440a-c3ba-4cba-bc2f-c14fbbe42eca)
+### Succes Page
 ![success-page](https://github.com/user-attachments/assets/03be3f14-dcc6-40a3-ad67-c002db1f6dca)
-![[mobile-menu](https://github.com/user-attachments/assets/f5a7eea8-4f7a-4a8e-8304-29fe0d87b4bd)
+### Mobile Menu
+![mobile-menu](https://github.com/user-attachments/assets/f5a7eea8-4f7a-4a8e-8304-29fe0d87b4bd)
 
 ---
 
 ## **Built With**
 -HTML
+
 -CSS
+
 -Javascript
 
 ---
