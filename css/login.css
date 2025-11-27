@@ -122,6 +122,7 @@
    display: block;
    margin: 20px auto 0 auto; 
    margin-bottom: 20px;
+   cursor: pointer;
 }
 
 @media (min-width: 1025px) {

@@ -122,6 +122,7 @@ ul {
     margin-right: 12px;
     padding: 9px 19px;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -226,6 +227,7 @@ ul {
     display: flex;
     gap: 10px;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .toast-view-cart,

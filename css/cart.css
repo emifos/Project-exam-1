@@ -131,6 +131,7 @@
     font-size: var(--font-size-button);
     padding: 10px 30px;
     border: none;
+    cursor: pointer;
 }
 
 .empty-cart {
