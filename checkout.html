@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Checkout page, this page has a form with different payment methods and form for delivery adress">
+    <meta name="description" content="Checkout page, this page has a form with different payment methods and form for delivery address">
     <title>NovaLane | Checkout Page</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,26 +71,22 @@
                 <h2 class="checkout-h2">Payment Method</h2>
                 <form id="paymentForm">
                     <div class="payment-option">
-                        <label>
                             <div class="payment-left">
-                                <input type="radio" name="payment" value="klarna">
-                                <span>Klarna - Pay now or pay later</span>
+                                <input type="radio" name="payment" value="klarna" id="klarna">
+                                <label for="klarna">Klarna - Pay now or pay later</label>
                             </div>
-                        </label>
                         <img src="image/klarna-logo.png" alt="Klarna logo" class="payment-image">
+                    </div>
+                    <div class="payment-option">
+                        <div class="payment-left">
+                            <input type="radio" name="payment" value="card" id="card">
+                            <label for="card">Credit-/Debit card, Apple Pay</label>
                         </div>
-                    <div class="payment-option"></div>
-                        <label>
-                            <div class="payment-lef">
-                                <input type="radio" name="payment" value="card">
-                                <span>Credit-/Debit card, Apple Pay</span>
-                            </div>
-                            <div class="payment-icons">
-                                <i class="fa-brands fa-cc-visa checkout-icon"></i>
-                                <i class="fa-brands fa-cc-apple-pay checkout-icon"></i>
-                                <i class="fa-brands fa-cc-mastercard checkout-icon"></i>
-                            </div>
-                        </label>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa checkout-icon"></i>
+                            <i class="fa-brands fa-cc-apple-pay checkout-icon"></i>
+                            <i class="fa-brands fa-cc-mastercard checkout-icon"></i>
+                        </div>
                     </div>
                     <div id="card-fields" class="card-fields hidden">
                         <input type="text" id="cardNumber" placeholder="Card number">
@@ -106,16 +102,16 @@
             </section>
             <section class="checkout-form">
                     <form id="checkoutForm">
-                        <h2 class="checkout-h2">Shipping Adress</h2>
+                        <h2 class="checkout-h2">Shipping Address</h2>
                         <label for="checkoutEmail">Email *</label>
-                        <input type="email" id="checkoutEmail" name="email" placeholder="Your Email Adress" required>
+                        <input type="email" id="checkoutEmail" name="email" placeholder="Your Email Address" required>
                         <p class="email-error"></p>  
                         <label for="checkoutMobile">Mobile Number *</label>
                         <input type="number" id="checkoutMobile" name="number" placeholder="Mobile Number" required>
                         <p class="mobile-error"></p>
                         <div class="address-row">
                             <div class="form-field">
-                                <label for="checkoutAdress">Address Line *</label>
+                                <label for="checkoutAddress">Address Line *</label>
                                 <input type="text" id="checkoutAddress" name="address" placeholder="Your Address" required>
                                 <p class="address-error"></p>
                             </div>
