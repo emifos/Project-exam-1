@@ -178,6 +178,11 @@
     border: 1px solid var(--valid-input-color) !important;
 }
 
+.payment-fieldset {
+    border: none;
+    padding: 15px 0;
+}
+
 /*Desktop*/
 @media (min-width: 1025px) {
 

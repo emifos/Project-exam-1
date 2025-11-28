@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="global-loader" class="loader hidden"></div>
-     <header>
+    <header>
          <a href="index.html" class="logo">NovaLane</a>
         <button class="hamburger-menu" id="hamburgerButton" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
@@ -68,12 +68,6 @@
         <span class="breadcrumbs-symbol"> | </span>
         <span class="breadcrumbs-page"> Product Detail</span>
     </div>
-    <div class="mini-banner">Upcoming Sale on all shoes 30/12/25</div>
-    <div class="breadcrumbs">
-        <a href="index.html" class="breadcrumbs-link">Product Feed Page</a>
-        <span class="breadcrumbs-symbol"> | </span>
-        <span class="breadcrumbs-page"> Checkout</span>
-    </div>
     <main>
         <section class="checkout">
             <div class="checkout-container">
@@ -81,24 +75,27 @@
             <section class="payment-form">
                 <h2 class="checkout-h2">Payment Method</h2>
                 <form id="paymentForm">
-                    <div class="payment-option">
+                    <fieldset class="payment-fieldset">
+                        <legend class="sr-only">Payment Method</legend>
+                        <div class="payment-option">
+                                <div class="payment-left">
+                                    <input type="radio" name="payment" value="klarna" id="klarna">
+                                    <label for="klarna">Klarna - Pay now or pay later</label>
+                                </div>
+                            <img src="image/klarna-logo.png" alt="Klarna logo" class="payment-image">
+                        </div>
+                        <div class="payment-option">
                             <div class="payment-left">
-                                <input type="radio" name="payment" value="klarna" id="klarna">
-                                <label for="klarna">Klarna - Pay now or pay later</label>
+                                <input type="radio" name="payment" value="card" id="card">
+                                <label for="card">Credit-/Debit card, Apple Pay</label>
                             </div>
-                        <img src="image/klarna-logo.png" alt="Klarna logo" class="payment-image">
-                    </div>
-                    <div class="payment-option">
-                        <div class="payment-left">
-                            <input type="radio" name="payment" value="card" id="card">
-                            <label for="card">Credit-/Debit card, Apple Pay</label>
+                            <div class="payment-icons">
+                                <i class="fa-brands fa-cc-visa checkout-icon"></i>
+                                <i class="fa-brands fa-cc-apple-pay checkout-icon"></i>
+                                <i class="fa-brands fa-cc-mastercard checkout-icon"></i>
+                            </div>
                         </div>
-                        <div class="payment-icons">
-                            <i class="fa-brands fa-cc-visa checkout-icon"></i>
-                            <i class="fa-brands fa-cc-apple-pay checkout-icon"></i>
-                            <i class="fa-brands fa-cc-mastercard checkout-icon"></i>
-                        </div>
-                    </div>
+                    </fieldset>
                     <div id="card-fields" class="card-fields hidden">
                         <input type="text" id="cardNumber" placeholder="Card number">
                         <p class="cardnumber-error"></p>
