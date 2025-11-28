@@ -198,7 +198,7 @@ async function thumbnailProducts() {
 
 
             link.innerHTML = `
-            <img src="${product.image.url}" alt="${product.image.alt || product.title}">
+            <img src="${product.image.url}" alt="">
             <p class="product-title">${product.title}</p>
             <p class="product-prices">${isDiscounted ? `<span class="product-discount">$ ${product.price}</span>
             <span class="product-price">$ ${product.discountedPrice}</span>`

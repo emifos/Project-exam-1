@@ -19,11 +19,12 @@
     <div id="global-loader" class="loader hidden"></div>
     <header>
         <a href="index.html" class="logo">NovaLane</a>
-        <button class="hamburger-menu" id="hamburgerButton">
+        <button class="hamburger-menu" id="hamburgerButton" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="header-right">
             <div class="search-container">
+                <label for="searchInput" class="sr-only">Search</label>
                 <input type="text" id="searchInput" name="searchInput" placeholder="Search" class="search-input">
                 <a href="coming-soon.html" aria-label="Search">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -38,6 +39,7 @@
       <nav class="mobile-menu" id="mobileMenu">
             <div class="mobile-menu-content">
                 <div class="mobile-search">
+                    <label for="searchInput" class="sr-only">Search</label>
                     <input type="text" id="mobileSearch" name="mobileSearch" placeholder="Search" class="mobile-search-input">
                     <a href="coming-soon.html" aria-label="Search">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
