@@ -8,8 +8,8 @@ window.addEventListener("load", () => {
 
 //Path to cart//
 function goTo(page) {
-    const baseBath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/,"/")
-    window.location.href = baseBath + page
+    const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/,"/")
+    window.location.href = basePath + page
 }
 
 //Get form and inputs//
