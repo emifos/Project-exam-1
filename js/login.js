@@ -6,6 +6,12 @@ window.addEventListener("load", () => {
     }, 300)
 })
 
+//Path to cart//
+function goTo(page) {
+    const baseBath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/,"/")
+    window.location.href = baseBath + page
+}
+
 //Get form and inputs//
 const form = document.getElementById("loginForm")
 
@@ -71,7 +77,7 @@ form.addEventListener("submit", async (e) => {
         localStorage.setItem("token", data.accessToken)
         setTimeout(() => {
             hideLoader()
-            window.location.href = "/cart.html"
+            goTo("cart.html")
         }, 400) 
         } catch (err) {
             hideLoader()
