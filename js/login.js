@@ -8,8 +8,13 @@ window.addEventListener("load", () => {
 
 //Path to cart//
 function goTo(page) {
-    const basePath = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/,"/")
-    window.location.href = basePath + page
+    const pathParts = window.location.pathname.split("/")
+    pathParts.pop()
+    if(pathParts[pathParts.length - 1] === "account") {
+        pathParts.pop()
+    }
+    const newPath = pathParts.join("/") + "/" + page
+    window.location.href = newPath
 }
 
 //Get form and inputs//
@@ -77,7 +82,10 @@ form.addEventListener("submit", async (e) => {
         localStorage.setItem("token", data.accessToken)
         setTimeout(() => {
             hideLoader()
-            goTo("cart.html")
+            
+            const redirectPage = localStorage.getItem("returnTo") || "cart.html"
+            localStorage.removeItem("retunTo")
+            goTo(redirectPage)
         }, 400) 
         } catch (err) {
             hideLoader()
