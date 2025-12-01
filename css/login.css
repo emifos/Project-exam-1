@@ -61,7 +61,6 @@
 }
 
 .login-form input:focus {
-    border: 1px solid var(--valid-input-color);
     outline: none;
 }
 
@@ -102,12 +101,12 @@
     margin: 0;
 }
 
-.input-error {
-    border: 1px solid var(--accent-color) !important;
+input.input-error {
+    border: 1px solid var(--accent-color);
 }
 
-.input-success {
-    border: 1px solid var(--valid-input-color) !important;
+input.input-success {
+    border: 1px solid var(--valid-input-color);
 }
 
 /* Log out */

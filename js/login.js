@@ -84,7 +84,7 @@ form.addEventListener("submit", async (e) => {
             hideLoader()
             
             const redirectPage = localStorage.getItem("returnTo") || "cart.html"
-            localStorage.removeItem("retunTo")
+            localStorage.removeItem("returnTo")
             goTo(redirectPage)
         }, 400) 
         } catch (err) {
