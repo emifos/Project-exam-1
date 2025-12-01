@@ -47,7 +47,6 @@
     font-size: var(--font-size-h2);
     padding: 30px 0 30px 0;
     text-align: center;
-
 }
 
 .checkout-h2 {
@@ -69,7 +68,6 @@
     padding: 15px 0;
     padding-right: 8px;
     gap: 10px;
-    
 }
 
 .payment-icons i {
@@ -77,8 +75,7 @@
 }
 
 .payment-image {
-    width: 26px;
-      
+    width: 26px;    
 }
 
 .checkout-icon {
@@ -129,7 +126,6 @@
     padding-left: 5px;
     font-family: var(--secondary-font);
     font-size: var(--font-size-placeholder);
-    
 }
 
 .checkout-zipcode {

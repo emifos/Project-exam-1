@@ -22,6 +22,7 @@
 
 }
 
+/*Signup-form*/
 .signup-form {
     max-width: 350px;
     margin: 50px auto;
@@ -111,7 +112,7 @@
 }
 
 
-
+/*Desktop*/
 @media (min-width: 1025px) {
 
 .signup-form {

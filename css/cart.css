@@ -66,9 +66,7 @@
 .cart-description,
 .cart-price-normal,
 .cart-price-old,
-.cart-price-new
-
- {
+.cart-price-new {
     font-family: var(--secondary-font);
     font-size: var(--placeholder-input);
     font-weight: 300; 
@@ -120,8 +118,6 @@
     font-family: var(--secondary-font);
     font-size: var(--placeholder-input);
     font-weight: 300;
-  
-
 }
 
 #checkoutButton {
@@ -168,9 +164,7 @@
   .cart-items {
     grid-column: 1 / 2;
     max-width: 600px;
-    margin: 0 auto;
-    
-   
+    margin: 0 auto; 
   }
 
   .cart-sum {
@@ -178,14 +172,9 @@
     background-color: var(--section-backround);
     padding: 20px 30px;
     margin-right: 50px;
-
   }
 
   #checkoutButton {
     margin-top: 20px;
   }
-}
-
-@media (min-width: 1025px) {
-
 }

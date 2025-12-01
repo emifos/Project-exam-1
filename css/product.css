@@ -141,7 +141,6 @@ ul {
     border-radius: 0;
     border: 1px solid var(--border-color);
     margin-bottom: 24px;
-    
 }
 
 .copy-message {
@@ -159,10 +158,7 @@ ul {
     font-family: var(--secondary-font);
     font-size: var(--font-size-button);
     font-weight: 400;
-
     margin-bottom: 5px;
-    
-    
 }
 
 .product-reviews {
@@ -171,8 +167,7 @@ ul {
     border: 2px solid var(--border-color);
     padding: 10px 8px;
     margin: 0 auto;
-    max-width: 300px;
-    
+    max-width: 300px;   
 }
 
 .product-reviews li {
@@ -214,7 +209,6 @@ ul {
     transform: translateY(-15px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 3000;
-
 }
 
 .cart-toast.show {
@@ -249,7 +243,6 @@ ul {
 
 @media (max-width: 768px) {
 
-   
     .product-specific-page {
         display: grid;
         grid-template-columns: 1fr;

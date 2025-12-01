@@ -27,12 +27,12 @@
 html, body {
   overflow-x: hidden;
 }
+
 body {
     margin: 0;
 }
 
 /*Loader*/
-
 .loader {
     position: fixed;
     top: 50%;
@@ -63,8 +63,6 @@ body {
 /* Cart count*/
 .cart-icon {
     position: relative;
-   
-  
 }
 
 .cart-count {
@@ -106,12 +104,10 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding-left: 48px;
-
 }
 
 .search-container {
     position: relative;
-
 }
 
 .search-input {
@@ -197,8 +193,7 @@ header {
     background-color: var(--header-color);
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    overflow-x: auto;
-    
+    overflow-x: auto;   
 }
 
 .fa-bars {
@@ -213,8 +208,7 @@ header {
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
+    align-items: flex-start;  
 }
 
 .mobile-search {
@@ -253,6 +247,7 @@ header {
     list-style: none;
     font-family: var(--secondary-font);
     padding-top: 10px;
+    padding-left: 10px;
 
 }
 
@@ -278,6 +273,7 @@ header {
     padding-bottom: 20px;
     width: 100%;
 }
+
 
 /*Mini-banner*/
 .mini-banner {
@@ -353,7 +349,6 @@ header {
 }
 
 /**Error message**/
-
 .error {
     font-family: var(--secondary-font);
     font-size: var(--font-size-label);

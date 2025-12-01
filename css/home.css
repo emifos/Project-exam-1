@@ -23,7 +23,6 @@
 }
 
 /* Carousel */
-
 .headline-h2 {
     font-family: var(--primary-font);
     font-size: var(--font-size-h2);
@@ -90,7 +89,6 @@
     font-weight: 600;
     text-transform: uppercase;
     padding-left: 30px;
-    
 }
 
 .slide-h2 {
@@ -98,7 +96,6 @@
     font-weight: 500;
     padding-left: 60px;
     padding-bottom: 30px;
-    
 }
 
 .black-watch {
@@ -155,14 +152,12 @@
     gap: 62px;
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
 .product-card {
     text-align: center;
     cursor: pointer;
     overflow: hidden;
-
 }
 
 .product-card img {
@@ -192,8 +187,6 @@
     font-weight: 300;
     font-size: var(--font-size-button);
     color: var(--primary-color);
-    
-
 }
 
 .product-discount {
@@ -206,10 +199,8 @@
 
 
 
-
 @media (max-width: 768px) {
     
- 
     .carousel-slide {
         flex: 0 0 100%;
         box-sizing: border-box;
@@ -238,12 +229,10 @@
         padding: 0;
         margin-top: 300px;
         width: 100%;
-        
     }
 
     .slide-h1 {
         font-size: var(--font-size-h2);
-
     }
 
     .slide-h2 {
@@ -285,14 +274,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px)  {
-
        
     .carousel-slide {
         flex: 0 0 100%;
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-      
     }
 
     .slide-image {
@@ -320,7 +307,6 @@
      .slide-h1 {
         font-size: var(--font-size-h2);
         padding: 0;
-
     }
 
     .slide-h2 {
@@ -329,15 +315,13 @@
     }
 
     .slide-buttons {
-        display: none;
-        
+        display: none; 
     }
     
     .carousel-navigation {
         margin-top: 80px;
         height: 40px;
         width: 40px;
-
    }
 
     .slide-buttons-mobile {
